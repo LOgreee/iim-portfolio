@@ -139,7 +139,7 @@
    .category_cards_list{
         grid-template-columns: 33% 33% 33%;
     }
-}
+} 
 
 /* Mobile */
 @media screen and (max-width:800px){
