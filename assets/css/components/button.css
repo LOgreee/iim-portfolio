@@ -1,0 +1,31 @@
+/* Base */
+.btn{
+    width: auto;
+    height: auto;
+    color: #222222;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 800;
+    transition: ease-in-out 0.2s;
+}
+    .btn:hover{
+        color: #FFFFFF;
+        background: #333333;
+        transition: ease-in-out 0.2s;
+    }
+
+/* Variante Primaire */
+    .btn.primary{
+        color: #FFFFFF;
+        background: #4AE874;
+    }
+    .btn.primary:hover{
+        color: #FFFFFF;
+        background: #333333;
+        transition: ease-in-out 0.2s;
+    }

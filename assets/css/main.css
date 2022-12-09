@@ -1,0 +1,103 @@
+/* Importation Font */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;300;600;800&display=swap');
+
+/* Importation CSS */
+@import url("components/button.css");
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+@import url("components/container.css");
+@import url("components/form.css");
+@import url("components/footer.css");
+@import url("components/loader.css");
+@import url("components/nav.css");
+@import url("components/timeline.css");
+
+/* Scrollbar */
+    *::-webkit-scrollbar {
+        display: block;
+        width: 10px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: #00000000;
+        margin: 80px 0 180px 0;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #444;
+        border-radius: 10px;
+    }
+
+/* Main Style */
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Alexandria;
+    background: #222222;
+    padding: 70px 0 0 0;
+    margin: 0;
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+/* Main */
+main{
+    padding: 0 10% 20px 10%;
+    min-height: calc(100vh - 70px - 170px - 70px);
+}
+    main.thibault{
+        background-image: url(../images/banner_thibault2.png);
+        background-size: 50%;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 0 50% 20px 10%;
+    }
+
+    main>*{
+        animation: 0.5s fadein;
+        animation-delay: 1.5s;
+    }
+
+@keyframes fadein{
+    from {
+        opacity: 0%;
+        transform: translateY(50px)
+    }
+    50%{
+        opacity: 0%;
+        transform: translateY(50px)
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+main>h1{
+    color: #FFFFFF;
+}
+
+div{
+    display: block;
+}
+
+a{
+    color: #FFFFFF;
+}
+
+    a:hover{
+        text-decoration: none;
+    }
+
+/* Tablette */
+@media screen and (max-width:800px){
+    main.thibault{
+        background-size: 75%;
+        background-attachment: scroll;
+        padding: 50% 10% 20px 10%;
+    }
+}

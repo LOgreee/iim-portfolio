@@ -1,0 +1,25 @@
+.banner{
+    width: 40%;
+    height: 75vh;
+    padding: 40px 50% 40px 10%;
+    margin-bottom: 100px;
+    background-image: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(51,51,51,0.75) 45%, rgba(0,0,0,0) 60%), url(../../images/projets/masque.webp);
+    background-size: cover ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFFFFF;
+}
+
+/* Mobile */
+@media screen and (max-width:800px){
+    .banner{
+        width: 80%;
+        height: 65vh;
+        padding: 40px 10% 40px 10%;
+    }
+}
