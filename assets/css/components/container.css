@@ -56,11 +56,3 @@
         margin: 0 0 25px 0;
         text-transform: uppercase;
     }
-
-/* Legal Mentions */
-.legal_mention{
-    color: #FFFFFF;
-}
-    .legal_mention p{
-        margin-bottom: 100px; 
-    }

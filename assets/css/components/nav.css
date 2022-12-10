@@ -1,15 +1,19 @@
-nav{
+nav, nav.bootstrap{
     top: 0;
     left: 0;
-    width: calc(100% - 80px);;
+    width: calc(100% - 80px);
     background: #333;
     padding: 20px 40px;
     display: flex;
     position: fixed;
     flex-direction: row;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
+
+    nav.bootstrap{
+         width: 100% !important;
+    }
 
 nav>a{
     color: #FFFFFF;
@@ -30,3 +34,12 @@ nav>a{
         nav>a:first-child:hover{
             text-decoration: none;
         }
+
+/* Tablette */
+@media screen and (max-width:800px){
+    nav>a:first-child{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px
+    }
+}
